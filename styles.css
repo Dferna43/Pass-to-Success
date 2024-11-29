@@ -12,8 +12,9 @@ White: #ffffff*/
 
 /* CSS Reset using * to target everything and remove any browser added styles */
 * {
-    margin: 0;
+    margin: 20px;
     padding: 0;
+    background-color: #484FB7;
     box-sizing: border-box;
 }
 
@@ -36,15 +37,32 @@ a {
 img {
     max-width: 100%;
     height: auto;
+    background-color: #ffffff;
 }
 
 /* per project provided information*/
 h1, h2 {
     font-family: 'kavoon'; 
+    color: #ffffff;
 }
 
 h1 {
     font-size: 3em;
+    text-align: center;
+    background-color: #6B8FE7;
+    padding: 17px;
+    margin-bottom: -10px;
+    border-radius: 0 0 25px 25px;
+}
+
+header p {
+    font-size: 13px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #D9526F;
+    padding: 10px 0 0 0;
+    margin: 0 25px 0 25px;
+    border-radius: 0 0 15px 15px;
 }
 
 nav h2 {
@@ -57,9 +75,63 @@ h2 {
 
 h3 {
     font-size: 1.5em;
+    color: #E9BB57;
 }
 
 h4 {
     font-size: 1.15em;
+    color: #484FB7;
 }
 
+.column-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.one-on-oneitem {
+    background-color: #ffffff;
+}
+
+.one-on-oneitem h4 {
+    background-color: #ffffff;
+}
+
+.one-on-oneitem p {
+    background-color: #ffffff;
+}
+
+.group-coachingitem {
+    background-color: #ffffff;
+}
+
+.group-coachingitem h4 {
+    background-color: #ffffff;
+}
+
+.group-coachingitem p {
+    background-color: #ffffff;
+}
+
+.workshopitem {
+    background-color: #ffffff;
+}
+
+.workshopitem h4 {
+    background-color: #ffffff;
+}
+
+.workshopitem p {
+    background-color: #ffffff;
+}
+
+.onlineitem {
+    background-color: #ffffff;
+}
+
+.onlineitem h4 {
+    background-color: #ffffff;
+}
+
+.onlineitem p {
+    background-color: #ffffff;
+}
