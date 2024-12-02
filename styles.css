@@ -31,6 +31,12 @@ ul, ol {
 /* CSS reset to remove any decorations from links */
 a {
     text-decoration: none;
+    background-color: #E9BB57;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
 }
 
 /* CSS reset to remove any img default styling by the browser */
@@ -64,6 +70,21 @@ header p {
     padding: 10px 0 0 0;
     margin: 0 25px 0 25px;
     border-radius: 0 0 15px 15px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #E9BB57;
+    border-radius: 0 0px 20px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    background-color: #E9BB57;
 }
 
 nav h2 {
