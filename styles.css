@@ -35,9 +35,10 @@ a {
 
 /* CSS reset to remove any img default styling by the browser */
 img {
-    max-width: 100%;
+    max-width: 75px;
     height: auto;
     background-color: #ffffff;
+    padding: 5px 0;
 }
 
 /* per project provided information*/
@@ -83,45 +84,71 @@ h4 {
     color: #484FB7;
 }
 
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
 .column-container {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    margin: 0;
+}
+
+.column-container h3 {
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 0 0 0;
 }
 
 .one-on-oneitem {
     background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px 0 20px 0;
 }
 
 .one-on-oneitem h4 {
     background-color: #ffffff;
+    font-size: 12px;
 }
 
 .one-on-oneitem p {
     background-color: #ffffff;
+    font-size: 11px;
 }
 
 .group-coachingitem {
     background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px 0 20px 0;
 }
 
 .group-coachingitem h4 {
     background-color: #ffffff;
+    font-size: 12px;
 }
 
 .group-coachingitem p {
     background-color: #ffffff;
+    font-size: 11px;
 }
 
 .workshopitem {
     background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px 0 20px 0;
 }
 
 .workshopitem h4 {
     background-color: #ffffff;
+    font-size: 12px;
 }
 
 .workshopitem p {
     background-color: #ffffff;
+    font-size: 11px;
 }
 
 .onlineitem {
@@ -134,4 +161,24 @@ h4 {
 
 .onlineitem p {
     background-color: #ffffff;
+}
+
+.onlineitem {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px 0 20px 0;
+}
+
+.onlineitem h4 {
+    background-color: #ffffff;
+    font-size: 12px;
+}
+
+.onlineitem p {
+    background-color: #ffffff;
+    font-size: 11px;
+}
+
+.chooseUs {
+    background-color: #D9526F;
 }
