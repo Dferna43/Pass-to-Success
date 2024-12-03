@@ -8,7 +8,7 @@ Dark-gray: #1E1E1E
 White: #ffffff*/
 
 /*Importing Font File*/
-@import @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
 
 /* CSS Reset using * to target everything and remove any browser added styles */
 * {
@@ -26,17 +26,6 @@ body {
 /* CSS reset on ul and ol to remove any styles by the browser*/
 ul, ol {
     list-style: none;
-}
-
-/* CSS reset to remove any decorations from links */
-a {
-    text-decoration: none;
-    background-color: #E9BB57;
-}
-
-a:hover {
-    color: red;
-    text-decoration: underline;
 }
 
 /* CSS reset to remove any img default styling by the browser */
@@ -72,19 +61,27 @@ header p {
     border-radius: 0 0 15px 15px;
 }
 
-nav {
+.nav-container {
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #E9BB57;
     border-radius: 0 0px 20px 20px;
 }
+
+#chooseUs {
+    background-color: #D9526F;
+}
+
+/* CSS reset to remove any decorations from links */
+a {
+    text-decoration: none;
+}
+
 
 nav ul {
     list-style: none;
     display: flex;
     margin: 0;
-    background-color: #E9BB57;
 }
 
 nav h2 {
@@ -200,6 +197,25 @@ h4 {
     font-size: 11px;
 }
 
-.chooseUs {
+#chooseUs {
     background-color: #D9526F;
+}
+
+#chooseUs h2 {
+    background-color: #D9526F;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    font-family: kavoon;
+}
+
+#chooseUs .chooseusReasons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+}
+
+.reason {
+    flex: 1;
+    padding: 20px;
+    flex-direction: row;
 }
