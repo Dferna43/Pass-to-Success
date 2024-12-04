@@ -18,6 +18,26 @@ White: #ffffff*/
     box-sizing: border-box;
 }
 
+@media (min-width: 900px) and (max-width: 1199px) {
+    * {
+        margin: 0 15px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+    * {
+        margin: 8px;
+    }
+}
+
+@media (max-width: 599px) {
+    * {
+        margin: 3px;
+        justify-content: center;
+        padding: 0;
+    }
+}
+
 /* Reset for body to change default font to sans-serif */
 body {
     font-family: sans-serif;
@@ -94,10 +114,6 @@ header p {
     display: inline-block;
 }
 
-#chooseUs {
-    background-color: #D9526F;
-}
-
 /* CSS reset to remove any decorations from links */
 a {
     text-decoration: none;
@@ -112,6 +128,27 @@ nav ul {
 
 nav h2 {
     font-size: 1.5em;
+}   
+
+@media (min-width: 600px) and (max-width: 899px) {
+    .nav-container ul {
+        font-size: small;
+    }
+}
+
+@media (max-width: 599px) {
+    .nav-container {
+        padding: 0;
+    }
+
+    .nav-container ul {
+        font-size: smaller;
+        border-radius: 15px;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
 }
 
 h2 {
@@ -132,6 +169,31 @@ h4 {
 .servicesContainer {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+    .servicesContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+    .servicesContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 599px) {
+    .servicesContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 50px;
+    }
 }
 
 .column-container {
@@ -226,20 +288,37 @@ h4 {
 }
 
 .choosecontainer {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     background-color: #D9526F;
     padding: 5px;
-    width: max-content;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+    .choosecontainer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 599px) {
+    .choosecontainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+    }
 }
 
 .chooseusReasons {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
     margin: 0;
     background-color: #D9526F;
     padding: 0;
+    flex-wrap: wrap;
+}
+
+#chooseUs {
+    background-color: #D9526F;
 }
 
 #chooseUs h2 {
@@ -251,21 +330,21 @@ h4 {
 }
 
 .reason {
-    flex: 1;
     padding: 20px;
-    flex-direction: column;
     background-color: #D9526F;
     outline: none;
     border: none;
     box-shadow: none;
-    white-space: nowrap;
+    flex-wrap: nowrap;
 }
+
 
 #personalized {
     background-color: #4CA7C0;
     border-radius: 15px;
     font-weight: bold;
     padding: 30px;
+    flex-wrap: wrap;
 }
 
 #proven {
@@ -273,6 +352,7 @@ h4 {
     border-radius: 15px;
     font-weight: bold;
     padding: 30px;
+    flex-wrap: wrap;
 }
 
 #supportive {
@@ -289,32 +369,44 @@ h4 {
     padding: 12px;
 }
 
-#pricing {
-    padding: 20px;
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.pricing h2 {
-    padding: 10px 0 0 0;
-}
-
 .pricecontainer {
-    display: flex;             
-    flex-direction: row;    
-    gap: 20px;      
-    max-width: 900px;     
-    width: 100%;    
-    margin: 0 auto;
-    padding: 10px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
 }
 
-.service-cost {
-   padding: 15px;
-   flex: 1;
-   box-sizing: border-box;
+
+h3 {
+    margin-top: 0;
+}
+
+
+@media (min-width: 900px) and (max-width: 1199px) {
+    .pricecontainer {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+    .pricecontainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr)
+    }
+    .service-cost {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 599px) {
+    .pricecontainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        padding: 0 50px;
+    }
+    .service-cost {
+        padding: 0;
+    }
 }
 
 table {
@@ -338,8 +430,6 @@ td {
 
 #firststep {
     padding: 10px;
-    width: 100%;
-    max-width: 1000PX;
     box-sizing: border-box;
     background-color: #D9526F;
 }
@@ -357,10 +447,17 @@ td {
     margin: 0 auto;
 }
 
+@media (max-width: 599px) {
+    .firststepcontainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 
 #firststep div {
     background-color: #D9526F;
     color: #ffffff;
+    flex-wrap: wrap;
 }
 
 
@@ -392,6 +489,7 @@ button {
     padding: 30px;
     border-radius: 0 0 15px 15px;
     gap: 50px;
+    flex-wrap: wrap;
 }
 
 .copyright {
@@ -400,4 +498,6 @@ button {
 
 .terms {
     background-color: #6B8FE7;
+    color: #ffffff;
+    text-decoration: underline;
 }
