@@ -102,7 +102,7 @@ h4 {
     color: #484FB7;
 }
 
-.container {
+.servicesContainer {
     display: flex;
     flex-direction: row;
 }
@@ -113,6 +113,7 @@ h4 {
     gap: 20px;
     flex: 1;
     margin: 0;
+    padding: 0%;
 }
 
 .column-container h3 {
@@ -197,8 +198,21 @@ h4 {
     font-size: 11px;
 }
 
-#chooseUs {
+.choosecontainer {
+    display: flex;
+    flex-direction: row;
     background-color: #D9526F;
+    padding: 5px;
+    width: max-content;
+}
+
+.chooseusReasons {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0;
+    background-color: #D9526F;
+    padding: 0;
 }
 
 #chooseUs h2 {
@@ -206,16 +220,100 @@ h4 {
     margin-bottom: 10px;
     font-size: 1.5em;
     font-family: kavoon;
-}
-
-#chooseUs .chooseusReasons {
-    display: flex;
-    justify-content: space-between;
-    gap: 10%;
+    padding: 10px;
 }
 
 .reason {
     flex: 1;
     padding: 20px;
-    flex-direction: row;
+    flex-direction: column;
+    background-color: #D9526F;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    white-space: nowrap;
+}
+
+#personalized {
+    background-color: #4CA7C0;
+    border-radius: 15px;
+    font-weight: bold;
+    padding: 30px;
+}
+
+#proven {
+    background-color: #6B8FE7;
+    border-radius: 15px;
+    font-weight: bold;
+    padding: 30px;
+}
+
+#supportive {
+    background-color: #E9BB57;
+    border-radius: 15px;
+    font-weight: bold;
+    padding: 30px;
+}
+
+#flexible {
+    background-color: #ffffff;
+    border-radius: 15px;
+    font-weight: bold;
+    padding: 12px;
+}
+
+#pricing {
+    justify-content: center;
+}
+
+.pricingcontainer {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: max-content;
+    justify-content: center;
+}
+
+.service span {
+    display: block;
+    background-color: #ffffff;
+    border: #E9BB57;
+}
+
+.servicespan {
+    background-color: #E9BB57;
+    padding: 5px;
+}
+
+.onecontainer {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #E9BB57;
+    padding: 15px;
+}
+
+.onecontainer h4 {
+    color: black;
+    font-weight: bold;
+    background-color: #E9BB57;
+}
+
+.cost span {
+    display: block;
+}
+
+#firststep {
+    background-color: #D9526F;
+}
+
+.firststepcontainer {
+    background-color: #D9526F;
+}
+
+#firststep h2 {
+    background-color: #D9526F;
+}
+
+#firststep p {
+    background-color: #D9526F;
 }
