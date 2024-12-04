@@ -12,7 +12,7 @@ White: #ffffff*/
 
 /* CSS Reset using * to target everything and remove any browser added styles */
 * {
-    margin: 0 20px 0 20px;
+    margin: 0 20px;
     padding: 0;
     background-color: #484FB7;
     box-sizing: border-box;
@@ -46,7 +46,8 @@ h1 {
     font-size: 3em;
     text-align: center;
     background-color: #6B8FE7;
-    padding: 17px;
+    padding: 40px 17px;
+    margin-top: 0;
     margin-bottom: -10px;
     border-radius: 0 0 25px 25px;
 }
@@ -63,9 +64,34 @@ header p {
 
 .nav-container {
     position: fixed;
+    background-color: #E9BB57;
     top: 0;
     right: 0;
     border-radius: 0 0px 20px 20px;
+    padding: 10px 0;
+}
+
+.nav-container ul {
+    list-style-type: none;
+    background-color: #E9BB57;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-container li {
+    margin: 0 15px;
+    font-weight: bold;
+    background-color: #E9BB57;
+}
+
+.nav-container a {
+    color: #1E1E1E;
+    background-color: #E9BB57;
+    text-decoration: none;
+    padding: 0;
+    display: inline-block;
 }
 
 #chooseUs {
@@ -95,6 +121,7 @@ h2 {
 h3 {
     font-size: 1.5em;
     color: #E9BB57;
+    text-wrap: nowrap;
 }
 
 h4 {
@@ -263,57 +290,114 @@ h4 {
 }
 
 #pricing {
-    justify-content: center;
-}
-
-.pricingcontainer {
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-    width: max-content;
-    justify-content: center;
-}
-
-.service span {
-    display: block;
-    background-color: #ffffff;
-    border: #E9BB57;
-}
-
-.servicespan {
-    background-color: #E9BB57;
-    padding: 5px;
-}
-
-.onecontainer {
+    padding: 20px;
     display: flex;
     justify-content: flex-start;
-    background-color: #E9BB57;
-    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.onecontainer h4 {
-    color: black;
-    font-weight: bold;
+.pricing h2 {
+    padding: 10px 0 0 0;
+}
+
+.pricecontainer {
+    display: flex;             
+    flex-direction: row;    
+    gap: 20px;      
+    max-width: 900px;     
+    width: 100%;    
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.service-cost {
+   padding: 15px;
+   flex: 1;
+   box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #E9BB57;
+    text-align: center;
+}
+
+th {
     background-color: #E9BB57;
 }
 
-.cost span {
-    display: block;
+td {
+    background-color: #ffffff;
 }
 
 #firststep {
-    background-color: #D9526F;
-}
-
-.firststepcontainer {
+    padding: 10px;
+    width: 100%;
+    max-width: 1000PX;
+    box-sizing: border-box;
     background-color: #D9526F;
 }
 
 #firststep h2 {
     background-color: #D9526F;
+    padding: 10px;
+ }
+
+.firststepcontainer {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: #D9526F;
+    margin: 0 auto;
 }
 
-#firststep p {
+
+#firststep div {
     background-color: #D9526F;
+    color: #ffffff;
+}
+
+
+.journey {
+    display: flex;
+    flex: 1;
+    margin-right: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+button {
+    background-color: #ffffff;
+    border: none;
+    color: #1E1E1E;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px #1E1E1E;
+}
+
+.copy-termcontainer {
+    display: flex;
+    background-color: #6B8FE7;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 0 0 15px 15px;
+    gap: 50px;
+}
+
+.copyright {
+    background-color: #6B8FE7;
+}
+
+.terms {
+    background-color: #6B8FE7;
 }
